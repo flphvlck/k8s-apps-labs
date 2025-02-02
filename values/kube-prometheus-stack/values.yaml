@@ -1,0 +1,26 @@
+nameOverride: kps
+
+alertmanager:
+  enabled: false
+
+kubeProxy:
+  enabled: false
+
+grafana:
+  ingress:
+    enabled: true
+    hosts:
+    - grafana.lab.hvlck.xyz
+
+prometheus:
+  ingress:
+    enabled: true
+    hosts:
+    - prometheus.lab.hvlck.xyz
+  prometheusSpec:
+    externalLabels:
+      cluster: lab
+      k8s_cluster: lab
+    externalUrl: http://prometheus.lab.hvlck.xyz
+    serviceMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelectorNilUsesHelmValues: false
