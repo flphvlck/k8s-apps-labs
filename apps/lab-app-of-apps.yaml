@@ -13,6 +13,4 @@ spec:
     path: apps
     targetRevision: HEAD
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+    automated: {}
