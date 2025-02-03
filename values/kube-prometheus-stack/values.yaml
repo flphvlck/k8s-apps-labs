@@ -17,10 +17,7 @@ prometheus-node-exporter:
     monitor:
       relabelings:
         - sourceLabels: [__meta_kubernetes_pod_node_name]
-          separator: ;
-          regex: ^(.*)$
-          targetLabel: instance
-          replacement: $1
+          targetLabel: node
           action: replace
 
 prometheus:
