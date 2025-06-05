@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: "https://kedacore.github.io/charts"
     chart: keda
-    targetRevision: 2.16.1
+    targetRevision: 2.17.1
 #    helm:
 #      valuesObject:
 #        clusterName: lab
