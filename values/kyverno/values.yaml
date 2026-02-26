@@ -6,3 +6,5 @@ crds:
 kyverno-api:
   labels:
     hvlck.xyz/owner: flphvlck
+  annotations:
+    argocd.argoproj.io/sync-options: ServerSideApply=true
