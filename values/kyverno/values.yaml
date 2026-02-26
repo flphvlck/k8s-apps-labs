@@ -1,5 +1,8 @@
 customLabels:
- hvlck.xyz/owner: flphvlck
+  hvlck.xyz/owner: flphvlck
 crds:
   annotations:
     argocd.argoproj.io/sync-options: ServerSideApply=true
+kyverno-api:
+  labels:
+    hvlck.xyz/owner: flphvlck
